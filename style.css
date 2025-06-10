@@ -1,0 +1,128 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+#container {
+  width: 100%;
+  /* height: 100vh;
+  overflow: hidden; */
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+.con01 .cloneWrap {
+  background-color: #000;
+}
+.con02 .cloneWrap {
+  background-color: #777;
+}
+.con03 .cloneWrap {
+  background-color: #444;
+}
+.con04 .cloneWrap {
+  background-color: #aaa;
+}
+
+/*cloneWrap*/
+.cloneWrap {
+  width: 100%;
+  border-radius: 50px 50px 0 0;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+}
+
+.cloneWrap::after {
+  content: "";
+  width: 1px;
+  height: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*contBox*/
+.cloneWrap .contBox {
+  display: flex;
+  justify-content: space-between;
+}
+.cloneWrap .contBox li {
+  width: 50%;
+}
+
+.cloneWrap .contBox li img {
+  width: 100%;
+}
+
+/*right*/
+.cloneWrap .contBox .right {
+  padding: 150px 0 0 100px;
+  box-sizing: border-box;
+}
+
+.cloneWrap .contBox .right .tit {
+  font-size: 110px;
+  line-height: 0.9;
+  margin-bottom: 80px;
+}
+
+.cloneWrap .contBox .right .txtBox {
+  width: 70%;
+  line-height: 1.5;
+}
+
+.cloneWrap .contBox .right .txtBox .en1 {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.cloneWrap .contBox .right .txtBox .en3 {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.cloneWrap .contBox .right .txtBox .skill li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+.cloneWrap .contBox .right .txtBox .skill li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.con01 .cloneWrap .contBox .right .txtBox .skill li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  background-color: orange;
+}
