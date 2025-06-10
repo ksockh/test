@@ -8,7 +8,7 @@ $(window).on("load", function () {
       scrollTrigger: {
         trigger: section,
         start: "top top",
-        end: () => "+=" + (sectionHeight + 2000),
+        end: () => "+=" + (sectionHeight + 500),
         pin: true,
         pinSpacing: i === 3 ? true : false, // 마지막 섹션만 spacing 줌
         markers: true,
