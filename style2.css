@@ -1,0 +1,148 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Layout */
+#container {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh; /* ✅ 최소 한 화면 */
+  min-height: 100dvh; /* ✅ 모바일 안전 대응 */
+  color: #fff;
+  overflow: visible; /* ✅ 내부 내용 보이도록 */
+}
+
+/* Background colors for demo */
+.con01 .cloneWrap {
+  background: #000;
+}
+.con02 .cloneWrap {
+  background: #777;
+}
+.con03 .cloneWrap {
+  background: #444;
+}
+.con04 .cloneWrap {
+  background: #aaa;
+}
+
+/* CloneWrap */
+.cloneWrap {
+  width: 100%;
+  border-radius: 50px 50px 0 0;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: visible;
+  padding: 0px 50px 400px;
+}
+
+/* Divider line */
+.cloneWrap::after {
+  content: "";
+  width: 1px;
+  height: 70%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Content Flexbox */
+.cloneWrap .contBox {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cloneWrap .contBox li {
+  width: 50%;
+}
+
+/* Image */
+.cloneWrap .contBox li img {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+/* Right Content */
+.cloneWrap .right {
+  padding: 0 0 0 50px;
+}
+.cloneWrap .right .tit {
+  font-size: 80px;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+.cloneWrap .right .txtBox {
+  width: 90%;
+  line-height: 1.5;
+}
+.cloneWrap .right .txtBox .en1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.cloneWrap .right .txtBox .en3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.cloneWrap .right .txtBox .skill li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+.cloneWrap .right .txtBox .skill li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.wrap,
+.contact {
+  width: 100%;
+  height: 100vh;
+  background-color: orange;
+}
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .cloneWrap .contBox {
+    flex-direction: column;
+  }
+  .cloneWrap .contBox li {
+    width: 100%;
+  }
+  .cloneWrap .right {
+    padding: 20px 0 0 0;
+  }
+  .cloneWrap .right .tit {
+    font-size: 36px;
+  }
+  .cloneWrap .right .txtBox {
+    width: 100%;
+  }
+  .cloneWrap .right .txtBox .en1 {
+    font-size: 16px;
+  }
+  .cloneWrap .right .txtBox .en3 {
+    font-size: 14px;
+  }
+}
