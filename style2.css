@@ -19,8 +19,9 @@ a {
 
 section {
   width: 100%;
+  /*
   min-height: 100vh; /* ✅ 최소 한 화면 */
-  min-height: 100dvh; /* ✅ 모바일 안전 대응 */
+  /*min-height: 100dvh; /* ✅ 모바일 안전 대응 */
   color: #fff;
   overflow: visible; /* ✅ 내부 내용 보이도록 */
 }
@@ -46,7 +47,7 @@ section {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: visible;
-  padding: 0px 50px 400px;
+  padding: 50px 50px 400px;
 }
 
 /* Divider line */

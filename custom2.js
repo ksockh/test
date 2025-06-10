@@ -8,10 +8,10 @@ $(window).on("load", function () {
       scrollTrigger: {
         trigger: section,
         start: "top top",
-        end: () => "+=" + (section.scrollHeight + 1000),
+        end: () => "+=" + (section.sectionHeight + 1000),
         pin: true,
         pinSpacing: i === 3 ? true : false, // 마지막 섹션만 spacing 줌
-        markers: false,
+        markers: true,
       },
     });
   });
