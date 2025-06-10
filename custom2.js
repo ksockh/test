@@ -6,7 +6,7 @@ $(window).on("load", function () {
       scrollTrigger: {
         trigger: section,
         start: "top top",
-        end: "bottom+100 top",
+        end: "bottom top",
         pin: true,
         pinSpacing: i === 3 ? true : false, // 마지막 섹션만 spacing 줌
         markers: true,
